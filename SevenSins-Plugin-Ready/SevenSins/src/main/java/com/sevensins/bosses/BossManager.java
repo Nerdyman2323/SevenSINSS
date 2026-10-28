@@ -398,7 +398,7 @@ public class BossManager implements Listener {
         if (victim.getHealth() < maxHp * 0.5) {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 40, 1, false, false));
             // Flash red particle on hit
-            ParticleUtils.burstEntity(victim, org.bukkit.Particle.CRIT_MAGIC, 10);
+            ParticleUtils.burstEntity(victim, org.bukkit.Particle.CRIT, 10);
         }
     }
 
